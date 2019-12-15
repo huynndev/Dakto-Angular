@@ -1,0 +1,125 @@
+
+$bg-color: #00af9d;
+
+:host ::ng-deep {
+    ul.k-menu {
+        background: #00af9d;
+        display: flex;
+        justify-content: space-around;
+        li {
+            color: white !important;
+        }
+    }
+    li:focus {
+        box-shadow: none !important;
+    }
+} 
+
+.menu-col {
+    border: 1px solid lightblue;
+    background-color: #f9f9f9;
+    padding: .5rem;
+}
+
+.header {
+    color: white;
+    padding: .5rem 0;
+    font-size: 90%;
+}
+
+.banner {
+    img {
+        max-width: 100%;
+    }
+}
+
+.color-bg {
+    color: $bg-color;
+}
+
+.icon-svg {
+    width: 1rem;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-row-gap: 1rem; 
+    i {
+        color: #00af9d;
+    }
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    .call-center-bg {
+        background-image: url('https://i.ibb.co/NxMcyZh/bg-hotline.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+    }
+    .bdr {
+        border-right: 1px dashed white;
+    }
+}
+
+.block-title {
+    border-bottom: 2px solid #00af9d;
+    span {
+        background-color: #00af9d;
+        color: white;
+        padding: .25rem .5rem 2px .5rem;
+        font-size: 1rem;    
+    }
+}
+
+.block-content {
+    display: grid;
+    grid-template-areas: 
+        'first first second second second'
+        'first first third third third'
+        'first first fourth fourth fourth';
+    grid-gap: 3rem;
+    .block-content-first {
+        grid-area: first;
+    }
+    .block-content-second {
+        grid-area: second;
+    }
+    .block-content-third {
+        grid-area: third;
+    }
+    .block-content-fourth {
+        grid-area: fourth;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.block-news {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #00af9d;
+    color: white;
+    padding: 1rem;
+}
+
+.sticky {
+    position: fixed;
+    top: -8px;
+    width: 100%;
+    z-index: 100;
+}
+  
+.sticky + .content {
+    padding-top: calc(55.63px + 1rem);
+}

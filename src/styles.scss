@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+$bg-color: #00af9d;
+
+html {
+    overflow-x: hidden;
+}
+
+.bg-color {
+    background-color: $bg-color;
+}
+
+.text-color {
+    color: $bg-color !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+html {
+    font-family: 'NotoSans';
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('/assets/fonts/NotoSans-Regular.ttf');
+  }
